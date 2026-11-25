@@ -31,7 +31,7 @@ call() { # key func send args...
   for a in "$@"; do argv+=(-args "$a"); done
   printf '%s\n' "$GNOKEY_PASSWORD" | gnokey maketx call -pkgpath "$REALM" -func "$fn" \
     ${send:+-send "$send"} "${argv[@]}" \
-    -gas-fee 1000000ugnot -gas-wanted 30000000 -broadcast \
+    -gas-fee 35000ugnot -gas-wanted 30000000 -broadcast \
     -chainid "$CHAIN" -remote "$REMOTE" -insecure-password-stdin "$key" 2>&1 \
     | grep -E "OK!|TX HASH|Data|Error|error" | sed "s/^/  [$key $fn] /"
 }
