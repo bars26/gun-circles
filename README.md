@@ -126,6 +126,13 @@ the late marks are for.
 
 The full log, with every payment, is in [`docs/testnet-run.log`](docs/testnet-run.log).
 
+Circle [#2 "Cuma günü"](https://latest.testnets.gno.land/r/g1k0pgsw39lh0a6mama0qh0lxa6vphd4yc2w9gqw/gun:c/2),
+recorded for the demo video, used 10-minute rounds and one round of collateral. Every payment
+was on time (`PPP`, `PPC`, `PPP`): Zeynep skipped round 2, Mehmet settled it once it was overdue
+(`TCt/qsyyRzV/k/W7j/74gZc0nhROyV3o6wxxHRJoGlc=`) and her collateral covered it. Ayşe and Mehmet
+withdrew 0.4 GNOT each (pot plus released collateral), Zeynep 0.3 GNOT (pot only, her collateral
+was used).
+
 ## Develop
 
 Needs the gno toolchain (`gno`, `gnokey`, `gnodev`).
