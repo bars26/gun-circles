@@ -12,6 +12,7 @@ and the members who receive the pot early can simply stop paying. **Gün** puts 
 gno.land realm, so the coins sit with the code, the books are public, and the rules are enforced
 instead of remembered.
 
+- **Demo video (2:35):** https://youtu.be/jq515jJL9PM
 - **Live on the Onyx testnet:** https://latest.testnets.gno.land/r/g1k0pgsw39lh0a6mama0qh0lxa6vphd4yc2w9gqw/gun
 - **Rules package:** `gno.land/p/g1k0pgsw39lh0a6mama0qh0lxa6vphd4yc2w9gqw/rosca`
 - **Realm:** `gno.land/r/g1k0pgsw39lh0a6mama0qh0lxa6vphd4yc2w9gqw/gun`

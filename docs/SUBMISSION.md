@@ -15,7 +15,7 @@ Rotating savings circles (the Turkish "altın günü") in a gno.land realm: memb
 - Live on the testnet (Onyx, onyx-1): https://latest.testnets.gno.land/r/g1k0pgsw39lh0a6mama0qh0lxa6vphd4yc2w9gqw/gun
 - Rules package: https://latest.testnets.gno.land/p/g1k0pgsw39lh0a6mama0qh0lxa6vphd4yc2w9gqw/rosca
 - Code (MIT): https://github.com/bars26/gun-circles
-- Demo video: VIDEO_URL
+- Demo video: https://youtu.be/jq515jJL9PM
 
 **Description**
 

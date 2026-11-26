@@ -6,6 +6,8 @@ collateral), run on 2026-11-26.
 
 ## YouTube
 
+Published: https://youtu.be/jq515jJL9PM
+
 **Title**
 
 Gün: rotating savings circles (altın günü) on gno.land
