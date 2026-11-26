@@ -105,6 +105,27 @@ Each circle page links its actions with the right amount pre-filled, for example
 rounds of collateral, Zeynep skips round 2 and is covered from collateral, and everyone withdraws
 at the end.
 
+## Verified on the testnet
+
+Circle [#1 "Salı günü"](https://latest.testnets.gno.land/r/g1k0pgsw39lh0a6mama0qh0lxa6vphd4yc2w9gqw/gun:c/1)
+ran end to end on Onyx (`onyx-1`) on 2026-11-26 with `scripts/demo.sh testnet`: three members,
+0.1 GNOT per round, 2 rounds of collateral (fully secured), 60-second rounds. Zeynep skipped
+round 2 and was covered from her collateral; everyone withdrew 0.3 GNOT of pots plus their
+released collateral, and the realm's books ended at 0 held, 0 owed. The round marks read `PLL`,
+`LLC`, `LLL`: with 60-second rounds most payments landed after the due time, which is exactly what
+the late marks are for.
+
+| Step | Transaction |
+|---|---|
+| Deploy `p/rosca` | `UtY4XMwPnnV6D/7k7jK2rS8pyFUGrORNjq+whRWrnU0=` (height 1413164) |
+| Deploy `r/gun` | `Xp2Egwka8qCllYeHdz/E50Tf2RtOepPvMqB8c5dHbqA=` (height 1413167) |
+| Create circle | `Dq2cWpimRuJ/L4uNwi94QlFzV8NFgrwbDhX4M/BqPIg=` |
+| Joins (Ayşe, Mehmet, Zeynep) | `ocYv1rTIZvkKX8tAwexZmN18tjJmpOMM5yTK1A7tlPk=`, `pnYqtXjr+CxTNo2DA4NFGKNyI6bnmixLyOuIsCIdiiM=`, `n5wFVBft3Fq+b1F4kPOmOdBJf77Hb3Fsnifwv2Ys4lA=` |
+| Round 2 settled, Zeynep covered | `efKMzmzdqtVJkULEYuelXzKQS/gjupIrePHw+w/qZ8U=` |
+| Withdrawals | `wgQVgb2ac20D8Sx1Rnz/NNfDVd2LYxRQmrmlGdRcBOE=`, `9pWaB2hqh40H4kcfos/wAgFLShQ0LnDPy+OpW+eSxHI=`, `8CHyWNvQ8EMEglOX7wBwtkFO6FdLs80Rzj7r8q1sBb4=` |
+
+The full log, with every payment, is in [`docs/testnet-run.log`](docs/testnet-run.log).
+
 ## Develop
 
 Needs the gno toolchain (`gno`, `gnokey`, `gnodev`).

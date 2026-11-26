@@ -1,0 +1,60 @@
+create circle
+  [gun-ayse Create] OK!
+  [gun-ayse Create] TX HASH:    Dq2cWpimRuJ/L4uNwi94QlFzV8NFgrwbDhX4M/BqPIg=
+circle id: 1
+join gun-ayse
+  [gun-ayse Join] OK!
+  [gun-ayse Join] TX HASH:    ocYv1rTIZvkKX8tAwexZmN18tjJmpOMM5yTK1A7tlPk=
+join gun-mehmet
+  [gun-mehmet Join] OK!
+  [gun-mehmet Join] TX HASH:    pnYqtXjr+CxTNo2DA4NFGKNyI6bnmixLyOuIsCIdiiM=
+join gun-zeynep
+  [gun-zeynep Join] OK!
+  [gun-zeynep Join] TX HASH:    n5wFVBft3Fq+b1F4kPOmOdBJf77Hb3Fsnifwv2Ys4lA=
+round 1
+  [gun-ayse Pay] --= Error =--
+  [gun-ayse Pay] Data: unable to call RPC method broadcast_tx_commit, unable to send request, Post "https://rpc.latest.testnets.gno.land:443": context deadline exceeded
+  [gun-ayse Pay] --= /Error =--
+circle id: 1 (set ID=1 to resume this circle)
+join gun-ayse
+  [gun-ayse Join] Data: rosca: not possible in the circle's current status
+exit=1
+circle id: 1 (set ID=1 to resume this circle)
+join gun-ayse
+  [gun-ayse Join] already done (an earlier attempt landed)
+join gun-mehmet
+  [gun-mehmet Join] already done (an earlier attempt landed)
+join gun-zeynep
+  [gun-zeynep Join] already done (an earlier attempt landed)
+round 1
+  [gun-ayse Pay] already done (an earlier attempt landed)
+  [gun-mehmet Pay] OK!
+  [gun-mehmet Pay] TX HASH:    fTMDmKZaJoypcHQmRn6f35lyHzqBCvMbKiUunn7T+TY=
+  [gun-zeynep Pay] OK!
+  [gun-zeynep Pay] TX HASH:    5eTr66/wd9wjo8CVMwk0vumpwS2wM9FK1uut7CcuEfQ=
+round 2
+  [gun-ayse Pay] OK!
+  [gun-ayse Pay] TX HASH:    BoKz3M6DjnJe7soSgu1Q6PSq4hERV6oam4JwTOt1kNU=
+  [gun-mehmet Pay] OK!
+  [gun-mehmet Pay] TX HASH:    H0gFFZj/DeBEn09iVViB+69anNifYMj9cJB8R/z4OFU=
+  zeynep skips round 2; settling once the round is due
+  [gun-mehmet Settle] OK!
+  [gun-mehmet Settle] TX HASH:    efKMzmzdqtVJkULEYuelXzKQS/gjupIrePHw+w/qZ8U=
+round 3
+  [gun-ayse Pay] OK!
+  [gun-ayse Pay] TX HASH:    ncuajxRakCr20qVK+8IX8yjOWrhaYb1Tt/g01S8PyiA=
+  [gun-mehmet Pay] OK!
+  [gun-mehmet Pay] TX HASH:    dQzI2hupjlfl9Jrzd8vOXYEbWZ5V9Zvt7Y404w2Ahac=
+  [gun-zeynep Pay] OK!
+  [gun-zeynep Pay] TX HASH:    rY6NU9jxovuwJF12pyzkqz08mXfrzFOqNNRaI/asTT4=
+withdraw gun-ayse
+  [gun-ayse Withdraw] OK!
+  [gun-ayse Withdraw] TX HASH:    wgQVgb2ac20D8Sx1Rnz/NNfDVd2LYxRQmrmlGdRcBOE=
+withdraw gun-mehmet
+  [gun-mehmet Withdraw] OK!
+  [gun-mehmet Withdraw] TX HASH:    9pWaB2hqh40H4kcfos/wAgFLShQ0LnDPy+OpW+eSxHI=
+withdraw gun-zeynep
+  [gun-zeynep Withdraw] OK!
+  [gun-zeynep Withdraw] TX HASH:    8CHyWNvQ8EMEglOX7wBwtkFO6FdLs80Rzj7r8q1sBb4=
+done: gno.land/r/g1k0pgsw39lh0a6mama0qh0lxa6vphd4yc2w9gqw/gun:c/1
+exit=0
