@@ -1,0 +1,32 @@
+name: test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  gno-test:
+    runs-on: ubuntu-latest
+    env:
+      GNO_VERSION: v1.8.0
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch gno ${{ env.GNO_VERSION }} (stdlibs and examples)
+        run: git clone --depth 1 --branch "$GNO_VERSION" https://github.com/gnolang/gno.git "$RUNNER_TEMP/gno"
+
+      - name: Install gno ${{ env.GNO_VERSION }}
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/gnolang/gno/${GNO_VERSION}/misc/install.sh -o "$RUNNER_TEMP/install.sh"
+          sh "$RUNNER_TEMP/install.sh" --version "$GNO_VERSION"
+          echo "$HOME/.gno/bin" >> "$GITHUB_PATH"
+
+      - name: Lint
+        env:
+          GNOROOT: ${{ runner.temp }}/gno
+        run: gno lint ./p/rosca ./r/gun
+
+      - name: Test
+        env:
+          GNOROOT: ${{ runner.temp }}/gno
+        run: gno test -v ./p/rosca ./r/gun
